@@ -1,21 +1,19 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
-import { Navbar, Footer, Routes } from './components'
+import { Navbar, Footer, Routes } from "./components";
 
 const App = () => {
-        const [darkTheme, setDarkTheme] = useState(false)
+  const [theme, setTheme] = useState(false);
 
+  return (
+    <div className={theme ? "dark" : ""}>
+      <div className="bg-gray-100 dark:bg-black dark:text-white min-h-screen">
+        <Navbar theme={theme} setTheme={setTheme} />
+        <Routes />
+        <Footer />
+      </div>
+    </div>
+  );
+};
 
-    return (
-        <div className= {darkTheme? "dark" : ""}>
-            <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-200 min-h-screen">
-            <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme}/>
-            <Routes />
-            <Footer />
-        </div> 
-           
-        </div>
-    )
-}
-
-export default App
+export default App;
