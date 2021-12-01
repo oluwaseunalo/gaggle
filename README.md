@@ -13,6 +13,6 @@ Gaggle is a search app built with create-react-app and Tailwind CSS
 - The project was set up with create-react-app
 - Managed State with Context API and Hooks
 - Lifecycle Callbacks with useEffect Hook
-- Routing using react-router-dom v5
+- Routing using React Router v5
 - Styled with Tailwing CSS
 - Click [here](https://gaggle.netlify.app/) to open the website.
